@@ -10,12 +10,11 @@ app.use(bodyParser.json());
 
 const port = 4000
 
-app.listen(port, (err)=>{
-    if(err){
-        console.log(err);
-        process.exit(1);
-        }
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
 
+app.listen(port, ()=>{
+    console.log(`Server runningt http://localhost:${port}`)
 })
 
-console.log(`Server running in: `+port);
