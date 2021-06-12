@@ -13,4 +13,4 @@ jobs:
         node-version: '14.x'
     - run: node --version
     - run: npm install
-    - run: node server.js    
+    - run: nodemn server.js    
