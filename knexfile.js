@@ -8,7 +8,7 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: "./gestiondeturno.sqlite"
+      filename: "./database/gestiondeturno.sqlite"
 
     },
     migrations,
