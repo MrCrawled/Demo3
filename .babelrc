@@ -1,9 +1,0 @@
-{
-    "presets":[
-        "@babel/preset-env"
-    ],
-    "plugins": [
-        ["@babel/plugin-transform-arrow-functions", {"spec": true}],
-        "@babel/plugin-proposal-class-properties"
-    ]
-}

@@ -1,4 +1,8 @@
-var environment = process.env.NODE_ENV === 'production';
-var config = require('knexfile.js')[environment];
+const knex = require("knex")
+const config = require("../knexfile")
 
-module.exports = require('knex')(config);
+let db = null
+db = knex(config.development)
+
+
+module.exports = db
