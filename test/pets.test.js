@@ -8,5 +8,4 @@ beforeAll(async () => {
 test("select pets", async () => {
   let pets = await db.from("pets").select("name")
   expect(pets.length).toBe(3)
-  done() 
 })
