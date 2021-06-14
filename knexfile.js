@@ -4,6 +4,10 @@ const migrations = {
   tableName: 'knex_migrations'
 }
 
+const seeds = {
+  directory: './database/seed'
+}
+
 module.exports = {
   development: {
     client: 'sqlite3',
